@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Chakra Petch', sans-serif;
+    background: linear-gradient(to bottom, #eaf6ff, #cce9ff);
+    overflow-x: hidden;
+}
+
+.about {
+    padding: calc(2vw) calc(1vw + 1rem) calc(2vw + 1rem);
+    text-align: left;
+    margin-top: calc(8vh);
+}
+
+.section-title>h2 {
+    font-size: calc(2vw + 1rem);
+    color: #0079cf;
+    margin: 0;
+    margin-left: 2vh;
+    border-bottom: none;
+}
+.section-title h3 {
+    font-size: calc(1vw + 1rem);
+    color: #0079cf;
+    border-bottom: 5px solid #0079cf; 
+    padding-bottom: 5px;
+    margin: 0;
+    margin-left: 2vh;
+}
+
+.section-title p {
+    color: hsl(206, 76%, 55%);
+    font-size: calc(2vw + 1rem);
+}
+
+.custom-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.custom-col {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+    padding: 0 15px;
+}
+
+.about-item {
+    margin-bottom: 20px;
+    background-color: hsl(206, 76%, 55%);
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.about-title {
+    color: hsl(206, 76%, 55%);
+    font-size: calc(1.5vw + 0.75rem);
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center; 
+}
+
+.about-title box-icon {
+    margin-right: 10px; 
+}
+
+.about-description {
+    text-align: justify;
+    color: #0079cf;
+    font-size: calc(1vw + 0.5rem);
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center; 
+}
+
+.about-description box-icon {
+    margin-right: 10px; 
+}
+
+
+/* Custom styling for white containers */
+.white-container {
+    background-color: white;
+    padding-top: calc(1vw);
+    padding-bottom: calc(1vw);
+    padding-left: calc(1vw + 0.25rem);
+    padding-right: calc(1vw + 0.25rem);
+    border-radius: 4px;
+    box-shadow: 10px 10px 10px rgba(3, 150, 255, 0.2);
+}
+
+#titles-background {
+    background-color: #006ab6;
+    box-shadow: 5px 5px 5px rgba(3, 150, 255, 0.5);
+}
+
+#titles-text {
+    color: white;
+}
+
+#subtiles {
+    background-color: #0079d0;
+    box-shadow: 5px 5px 5px rgba(3, 150, 255, 0.5);
+}
+
+#subtiles-text {
+    color: white;
+}
+#subtiles-level2{
+    background-color: #d8efff;
+    box-shadow: 5px 5px 5px rgba(3, 150, 255, 0.5);
+}
+#subtiles-level2-text {
+    color: white;
+}
+.myimage {
+width: 100%;
+height: 100%;
+object-fit: contain;
+margin-bottom: 10px;
+}
+
+.need-verticle {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2vw;
+    padding: 1vw;
+}
+
+.about-column {
+    flex-basis: calc(33.33% - 10px);
+    flex-grow: 1;
+
+}
+
+#image-container{background-color: white;
+    padding-top: calc(.05vw);
+    padding-bottom: calc(0.05vw);
+    padding-left: calc(0.05vw + 0.25rem);
+    padding-right: calc(0.05vw + 0.25rem);
+    border-radius: 4px;
+    box-shadow: 10px 10px 10px rgba(191, 191, 192, 0.5);}
+
+#btn{
+    display: flex;
+}
+.portfolio-button {
+    background-color: #0079d0;
+    color: white;
+    padding: calc(0.75vw);
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+ 
+
+}
+
+.portfolio-button a {
+    text-decoration: none;
+    color: white;
+    font-size: calc(1vh + 0.75rem);
+    display: inline-block;
+    padding: calc(0.5vw);
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.portfolio-button a:hover {
+    background-color: white;
+    color: #006ab6;
+}
+
+footer {
+    height: calc(7vh);
+    width: 100%;
+    margin-top: 10px;
+    padding: 0;
+    background-color:#0396ff; 
+    color: white; 
+    position: relative; 
+    bottom: 0; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+#actual-footer-about {
+    margin:  0px; 
+    padding: 0px; 
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: CALC(3VH);
+    align-items: center;
+    justify-items: center;
+}
+@media (max-width: 900px) {
+    footer {
+        height: calc(4vh);
+        width: 100%;
+        margin-top: 10px;
+        padding: 0;
+        background-color: #0396ff; 
+        color: white;
+        position: relative; 
+        bottom: 0; 
+        display: flex; 
+        align-items: center; 
+        justify-content: center; 
+    }
+    
+    #actual-footer-about {
+        margin: 0;
+        padding: 0; 
+        font-family: 'Chakra Petch', sans-serif;
+        font-size: 1rem;
+        align-items: center;
+        justify-items: center;
+    }
+}

@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Chakra Petch', sans-serif;
+    background: linear-gradient(to bottom, #eaf6ff, #cce9ff);
+    overflow-x: hidden;
+}
+
+.resume {
+    padding: calc(2vw) calc(1vw + 1rem) calc(2vw + 1rem);
+    text-align: left;
+    margin-top: calc(7vh);
+}
+@media (max-width: 900px) {
+    .resume{
+        margin-top: calc(7vh);
+    }
+    
+}
+
+.section-title h2 {
+    font-size: calc(2vw + 1rem);
+    color: #0079cf;
+    border-bottom: 2px solid #0079cf; 
+    padding-bottom: 5px;
+    margin: 0;
+}
+
+.section-title p {
+    color: hsl(206, 76%, 55%);
+    font-size: calc(2vw + 1rem);
+}
+
+.custom-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.custom-col {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+    padding: 0 15px;
+}
+
+.resume-item {
+    margin-bottom: 20px;
+    background-color: hsl(206, 76%, 55%);
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.resume-title {
+    color: hsl(206, 76%, 55%);
+    font-size: calc(1.5vw + 0.5rem);
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center; 
+}
+
+.resume-title box-icon {
+    margin-right: 10px; 
+}
+
+.resume-description {
+    text-align: justify;
+    color: #0079cf;
+    font-size: calc(1vw + 0.5rem);
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center; 
+}
+
+.resume-description box-icon {
+    margin-right: 10px; 
+}
+
+.contact-info li,
+.experience-details li {
+    list-style: disc;
+    margin-bottom: 5px;
+    color: rgb(53, 152, 227);
+    font-size: calc(1vw + 0.5rem);
+}
+
+/* Custom styling for white containers */
+.white-container {
+    background-color: white;
+    padding-top: calc(1vw);
+    padding-bottom: calc(1vw);
+    padding-left: calc(1vw + 0.5rem);
+    padding-right: calc(1vw + 0.5rem);
+    border-radius: 4px;
+    box-shadow: 10px 10px 10px rgba(53, 152, 227, 0.2);
+}
+
+#titles-background {
+    background-color: #006ab6;
+    box-shadow: 10px 10px 10px rgba(3, 150, 255, 0.5);
+}
+
+#titles-text {
+    color: white;
+}
+
+#subtiles {
+    background-color: #0079d0;
+    box-shadow: 10px 10px 10px rgba(3, 150, 255, 0.5);
+}
+
+#subtiles-text {
+    color: white;
+}
+footer {
+    height: calc(7vh);
+    width: 100%;
+    margin-top: 10px;
+    padding: 0;
+    background-color:#0396ff; 
+    color: white; 
+    position: relative; 
+    bottom: 0; 
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
+}
+#actual-footer-resume {
+    margin:  0px; 
+    padding: 0px; 
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: CALC(3VH);
+    align-items: center;
+    justify-items: center;
+}
+.resume-title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.resume-title-text {            flex-grow: 1;
+}
+
+.resume-button {
+    background-color: #0079d0;
+    color: white;
+    padding: calc(0.5vw);
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    right: 0px;
+    bottom: 0PX;
+}
+
+
+.resume-title-container::after {
+content: "";
+position: absolute;
+width: 100%;
+height: calc(0.5vw);
+background-color: #0079cf;
+bottom: 0;
+left: 0;
+}
+
+.resume-button a {
+text-decoration: none;
+color: white;
+display: inline-block;
+padding: calc(0.5vw);
+border: none;
+border-radius: 14px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+.resume-button a:hover {
+background-color: white;
+color: #006ab6;
+}
+
+@media (max-width: 900px) {
+    footer {
+        height: calc(4vh);
+        width: 100%;
+        margin-top: 10px;
+        padding: 0;
+        background-color: #0396ff; 
+        color: white; 
+        position: relative; 
+        bottom: 0; 
+        display: flex; 
+        align-items: center; 
+        justify-content: center; 
+    }
+    
+    #actual-footer-resume {
+        margin: 0; 
+        padding: 0; 
+        font-family: 'Chakra Petch', sans-serif;
+        font-size: 1rem;
+        align-items: center;
+        justify-items: center;
+    }
+}
